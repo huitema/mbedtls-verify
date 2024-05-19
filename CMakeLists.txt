@@ -123,13 +123,4 @@ add_custom_target(
     -i
     ${CLANG_FORMAT_SOURCE_FILES})
 
-# Specify Install targets
-install(TARGETS ptls_mbedtls_trial ptls_mbedtls-core
-        RUNTIME DESTINATION bin
-        LIBRARY DESTINATION lib
-        ARCHIVE DESTINATION lib)
-
-install(FILES
-        ${PTLS_MBEDTLS_CORE_HEADERS}
-        DESTINATION include)
 
