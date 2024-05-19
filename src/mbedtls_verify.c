@@ -134,6 +134,8 @@ int main(int argc, char ** argv)
                     printf("Cannot import public key, status = %d\n", status);
                 }
                 else {
+                    printf("Signature computed, public key derived from private key, trying now to verify.\n");
+
                     if ((status = psa_verify_message(pubkey_id, sign_algo, key_data, sizeof(key_data), pubkey_data, pubkey_length)) != PSA_SUCCESS) {
                         char const* str_err = "-";
 
