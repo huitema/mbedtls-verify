@@ -90,8 +90,7 @@ uint8_t key_data[] = {
 
 int main(int argc, char ** argv)
 {
-    int ret = 0;
-    psa_status_t status;
+    psa_status_t status = 0;
     uint8_t hash_buffer[64];
     uint8_t sign_buffer[512];
     uint8_t pubkey_data[512];
